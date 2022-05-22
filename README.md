@@ -1,16 +1,41 @@
-# Vue 3 + TypeScript + Vite
+# Hi👋
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## About
 
-## Recommended IDE Setup
+> 最近刷了 B 站的教程学习了下 vue3, 为了不那么快就把听的东西全部忘记掉了 🤣, 因此写个人人都会写的 todo-list 来稍微打实一下 vue3 的使用基础
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+## Toolkit
 
-## Type Support For `.vue` Imports in TS
+- 如果你想启动这个项目, 那么你需要安装有 nodejs 环境 和 vue-cli 工具, 原因如下
+- 这个项目使用了 vite + vue3-ts 的配置, 使其开发更加快速 ⚡ 和愉悦 😊
+- 使用了 scss 来简化 css 的编写, 请无视我拙劣的样式编写水平 🤣
+- 既然是 vue3, 那肯定使用了一些 vue 的生态系统插件
+  - vue-router
+  - vuex
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
+## Run && Build
 
-1. Run `Extensions: Show Built-in Extensions` from VS Code's command palette, look for `TypeScript and JavaScript Language Features`, then right click and select `Disable (Workspace)`. By default, Take Over mode will enable itself if the default TypeScript extension is disabled.
-2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
+- 你可以通过修改 package.json 里的 scripts 来进行自定义更改, 底下为项目默认运行配置
 
-You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
+- 随便通过一个 `shell` 进入项目文件夹内
+  ```sh
+  cd a-vue3-todo-list
+  ```
+- 安装必要的依赖
+  ```sh
+  npm install
+  ```
+- 启动开发服务器
+  ```sh
+  npm run dev
+  ```
+- 打包文件
+  ```sh
+  npm run build
+  # 执行完成后会在项目目录内生成一个 dist 文件夹
+  # 你可以通过 nginx, github 静态页等进行部署, 就不多言了
+  ```
+
+## LAST
+
+- Enjoy it
